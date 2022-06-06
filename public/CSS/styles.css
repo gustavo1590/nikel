@@ -56,14 +56,6 @@ header{
 }
 
 
-.modal-footer {
-
-    width: 25%, center;
-    justify-content: center;
-    background-color: white;
-    
-}
-
 .button-float {
     border-radius: 100%;
     height: 60px;
