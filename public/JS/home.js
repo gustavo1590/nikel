@@ -6,7 +6,7 @@ let data = {
 };
 
 document.getElementById("button-logout").addEventListener("click", logout);
-document.getElementById("transactions-buttons").addEventListener("click", function() {
+document.getElementById("transactions-button").addEventListener("click", function() {
     window.location.href = "transactions.html"
 })
 
@@ -58,6 +58,13 @@ function checkLogged() {
     getCashOut();
     getTotal();
 
+}
+
+function logout() {
+    sessionStorage.removeItem("logged");
+    localStorage.removeItem("session");
+
+    window.location.href = "index.html"
 }
 
 
@@ -157,5 +164,5 @@ function getTotal() {
 }
 
 function saveData(data) {
-    localStorage.setItem(data.login, JSON,stringify(data));
+    localStorage.setItem(data.login, JSON.stringify(data));
 }
