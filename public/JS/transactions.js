@@ -63,7 +63,7 @@ function logout() {
     window.location.href = "index.html"
 }
 
-function getTransaction() {
+function getTransactions() {
     const transactions = data.transactions;
     let transactionsHtml = ``;
 
@@ -90,5 +90,5 @@ function getTransaction() {
 }
 
 function saveData(data) {
-    localStorage.setItem(data.login, JSON,stringify(data));
+    localStorage.setItem(data.login, JSON.stringify(data));
 }
